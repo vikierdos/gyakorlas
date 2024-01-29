@@ -1,0 +1,71 @@
+#regisztracio label::after{
+    content: "*";
+    color: rgb(255, 0, 140);
+}
+
+main{
+    width: 70%;
+    margin: auto;
+}
+fieldset{
+    border-color: #e6a9dd;
+}
+#regisztracio input{
+    float: right;
+    width: 50%;
+    margin: 5px;
+    margin-right: 10%;
+    height: 30px;
+}
+fieldset legend, #submit{
+    border: #e097c2 solid 1px;
+    background-color: #d43982;
+    padding: 5px;
+    color: white;
+}
+fieldset{
+    background-color: #ffe6fa;
+    margin: 10px;
+}
+#submit{
+    margin: 10px;
+    margin-left: -10px;
+}
+#szemelyes legend{
+    border: #d43982 solid 1px;
+    background-color: #e097c2;
+    padding: 5px;
+    color: black;
+}
+
+#szemelyes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+}
+label{
+    margin: 10px;
+}
+br{
+    clear: both;
+}
+@media  screen and (max-width: 600px) {
+    main{
+        width: 100%;
+    }
+
+    #szemelyes{
+        grid-template-columns: 1fr 1fr;
+    }
+    #szemelyes div{
+        margin: 5px;
+    }
+
+    #submit{
+        margin: 10px;
+        margin-left: 10px;
+    }
+    #felhasznalo, #jelszo, #email{
+        margin-right: 0;
+    }
+}

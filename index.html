@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+ <html lang="hu">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Erdős Viktória</title>
+ </head>
+ <body>
+    <main>
+        <form action="#" method="get">
+            <fieldset id="regisztracio">
+               <legend>regisztráció</legend>
+               <label for="felhasznalo">felhasználónév</label>
+               <input type="text" name="felhasznalo" id="felhasznalo" placeholder="csak ékezetmentes betűk" required><br>
+               <label for="jelszo">jelszó</label>
+               <input type="text" name="jelszo" id="jelszo" placeholder="min 3 karakter" minlength="3" required><br>
+               <label for="email">e-mail cím</label>
+               <input type="text" name="email" id="email" placeholder="vmi@vmi.hu" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
+            </fieldset>
+            <fieldset id="szuletes">
+               <legend>születés</legend>
+               <label>születési dátum</label>
+               <input type="date" name="datum" id="datum">
+               <fieldset id="szemelyes">
+                  <legend>személyes</legend>
+                  <div>
+                  <input type="checkbox" id="nyelv1" name="nyelv1" value="Angol">
+                  <label for="nyelv1">Angol</label><br>
+                  <input type="checkbox" id="nyelv2" name="nyelv2" value="Német">
+                  <label for="nyelv2">Német</label><br>
+               </div>
+
+               <div>
+                  <label for="szakma">Választott szak:</label>
+                  <select name="szakma" id="szakma">
+                     <option value="szoftverfejleszto">Szoftverfejlesztő</option>
+                     <option value="rendszergazda">Rendszergazda</option>
+                     <option value="egyeb">Egyéb</option>
+                  </select>
+               </div>
+
+               <div>
+                  <input type="radio" id="ferfi" name="nem" value="nem">
+                  <label for="ferfi">férfi</label><br>
+                  <input type="radio" id="no" name="nem" value="nem">
+                  <label for="no">nő</label><br>
+               </div>
+               </fieldset>
+            </fieldset>
+            <input type="submit" value="regisztráció" id="submit">
+        </form>
+    </main>
+ </body>
+ </html>
